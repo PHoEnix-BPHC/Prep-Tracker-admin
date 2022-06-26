@@ -8,6 +8,7 @@ import Usage from './Pages/Usage';
 import Login from './Components/Login';
 import HomeToolbar from './Components/HomeToolbar';
 import PrivateRoute from './Components/PrivateRoute';
+import Jobs from './Pages/Jobs';
 
 class App extends React.Component {
   constructor() {
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route path="/" exact element={<Home />} />
           <Route path="/usage" element={<PrivateRoute><Usage /></PrivateRoute>} />
           <Route path="/login" element={<Login />} />
+          <Route path="/jobs" element={<PrivateRoute><Jobs /></PrivateRoute>} />
         </Routes>
       </div>
     );

@@ -36,7 +36,7 @@ class Toolbar extends React.Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/job">
+                                <NavLink href="/jobs">
                                     Jobs
                                 </NavLink>
                             </NavItem>
