@@ -52,8 +52,8 @@ class Usage extends React.Component {
         }).catch(err => console.log(err.message))
     }
     render() {
-        const filteredArrayIT = this.state.coreUsers.filter(user => user.id.toLowerCase().includes(this.state.filteredValueIT.toLowerCase()))
-        const filteredArrayCore = this.state.itUsers.filter(user => user.id.toLowerCase().includes(this.state.filteredValueCore.toLowerCase()))
+        const filteredArrayIT = this.state.itUsers.filter(user => user.id.toLowerCase().includes(this.state.filteredValueIT.toLowerCase()))
+        const filteredArrayCore = this.state.coreUsers.filter(user => user.id.toLowerCase().includes(this.state.filteredValueCore.toLowerCase()))
         return (
             <div>
                 <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
